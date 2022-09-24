@@ -1,0 +1,9 @@
+FROM node:18
+
+ENV WORKSPACE /app
+RUN mkdir -p ${WORKSPACE}
+WORKDIR ${WORKSPACE}
+
+COPY ./package.json ${WORKSPACE}/
+
+COPY . $WORKSPACE
