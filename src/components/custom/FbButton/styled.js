@@ -8,4 +8,5 @@ export const Button = styled.button`
   background: ${(props) => (props.primary ? '#42b983' : '#ccc')};
   color: ${(props) => (props.primary ? 'white' : 'black')};
   cursor: pointer;
+  width: ${(props) => (props.width ? props.width : 'auto')}; ;
 `;
